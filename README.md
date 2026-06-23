@@ -1,4 +1,4 @@
-# Mock OA Readiness Predictor
+# PrepScore
 
 A diagnostic tool that helps engineering students find out how ready they really
 are for software engineering placement assessments — not by self-rating, but by

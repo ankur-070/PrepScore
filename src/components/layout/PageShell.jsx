@@ -8,10 +8,10 @@ export default function PageShell({ children }) {
         <div className="flex items-center justify-between">
           <div>
             <p className="font-display text-base font-semibold tracking-tight text-paper">
-              Mock OA Readiness Predictor
+              PrepScore
             </p>
             <p className="font-mono text-xs text-muted">
-              Verified placement readiness, not guessed.
+              Measure your placement readiness with data, not guesswork.
             </p>
           </div>
         </div>
