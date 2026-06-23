@@ -10,7 +10,7 @@ PrepScore is a web-based assessment platform that evaluates a student's placemen
 
 ## Live Demo
 
-https://mock-oa-readiness-predictor.vercel.app
+https://prepscore-web.vercel.app
 
 ---
 
