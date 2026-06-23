@@ -28,16 +28,6 @@ https://mock-oa-readiness-predictor.vercel.app
 ---
 
 ## Application Screenshots
-![Profile Assessment](docs/images/profile_dashboard.png)
-
-![Self Assessment](docs/images/self_assesment_page.png)
-
-![Verification Quiz](docs/images/quiz_page.png)
-
-![Readiness Report](docs/images/readiness_report.png)
-
-![Final Report](docs/images/final_report.png)
-
 
 ### Profile Assessment
 
