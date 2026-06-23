@@ -1,70 +1,136 @@
 # PrepScore
 
-A diagnostic tool that helps engineering students find out how ready they really
-are for software engineering placement assessments — not by self-rating, but by
-**verifying** self-rated confidence against a short subject quiz.
+**Placement Readiness Assessment Platform**
 
-Developed by: **Ankur Singh** — ankursingh9998@gmail.com
-Built for Digital Heroes.
+Measure your placement readiness with data, not guesswork.
 
-## Why this exists
+PrepScore is a web-based assessment platform that evaluates a student's placement preparedness through profile analysis, self-assessment, technical verification quizzes, and personalized readiness reports.
 
-Most readiness checklists ask "how confident are you in DBMS?" and stop there.
-This tool asks that question, then quietly tests you on the same subject, and
-shows you the gap between what you believed and what you actually know — alongside
-a readiness score, tier prediction, and a personalized prep plan.
+---
 
-## Tech stack
+## Live Demo
 
-- React 18 + Vite
-- Tailwind CSS
-- Chart.js / react-chartjs-2
+https://mock-oa-readiness-predictor.vercel.app
 
-## Getting started
+---
+
+## Key Features
+
+* Multi-step readiness assessment workflow
+* Technical profile evaluation
+* Subject-wise self-assessment
+* Verification quizzes across core CS subjects
+* Confidence vs Actual Performance analysis
+* Placement readiness scoring engine
+* Personalized improvement recommendations
+* Interactive analytics dashboards
+
+---
+
+## Application Screenshots
+![Profile Assessment](docs/images/profile_dashboard.png)
+
+![Self Assessment](docs/images/self_assesment_page.png)
+
+![Verification Quiz](docs/images/quiz_page.png)
+
+![Readiness Report](docs/images/readiness_report.png)
+
+![Final Report](docs/images/final_report.png)
+
+
+### Profile Assessment
+
+![Profile Assessment](docs/images/profile_dashboard.png)
+
+### Self Assessment
+
+![Self Assessment](docs/images/self_assesment_page.png)
+
+### Verification Quiz
+
+![Verification Quiz](docs/images/quiz_page.png)
+
+### Readiness Report
+
+![Readiness Report](docs/images/readiness_report.png)
+
+### Final Assessment Dashboard
+
+![Final Report](docs/images/final_report.png)
+
+---
+
+## How It Works
+
+1. Enter academic and coding profile information.
+2. Rate your confidence across core CS subjects.
+3. Attempt a short verification quiz.
+4. Compare self-perception against actual performance.
+5. Receive a readiness score and personalized preparation roadmap.
+
+---
+
+## Tech Stack
+
+* React 18
+* Vite
+* Tailwind CSS
+* Chart.js
+* React ChartJS 2
+
+---
+
+## Scoring Methodology
+
+| Component             | Max Score |
+| --------------------- | --------- |
+| DSA Profile           | 40        |
+| CGPA                  | 15        |
+| Projects              | 20        |
+| Internship Experience | 10        |
+| Verification Quiz     | 15        |
+
+The final readiness score is calculated using weighted contributions from academic performance, coding profile, project experience, internships, and quiz validation.
+
+---
+
+## Project Structure
+
+```text
+src/
+├── data/
+├── context/
+├── utils/
+├── components/
+│   ├── layout/
+│   ├── steps/
+│   ├── results/
+│   └── ui/
+└── lib/
+```
+
+---
+
+## Local Setup
 
 ```bash
 npm install
 npm run dev
 ```
 
-Build for production:
+Production Build:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Deploying to Vercel
+---
 
-1. Push this repository to GitHub.
-2. Import the repo in Vercel.
-3. Framework preset: **Vite** (auto-detected via `vercel.json`).
-4. No environment variables required.
-5. Deploy — `npm install && npm run build` runs automatically, output is served from `dist/`.
+## Author
 
-## How scoring works
+Ankur Singh
 
-| Component   | Max points | Basis |
-|---|---|---|
-| DSA (LeetCode + CodeChef) | 40 | Problem-count tiers |
-| CGPA | 15 | CGPA bracket |
-| Projects | 20 | Project count |
-| Internship | 10 | Yes/No |
-| Quiz | 15 | (Correct / 8) × 15 |
-
-See `src/data/scoringConfig.js` and `src/utils/scoring.js` for exact thresholds.
-
-## Project structure
-
-```
-src/
-├── data/         # static config: quiz bank, scoring thresholds, tiers, demo profile
-├── context/       # AssessmentContext — single source of truth + step navigation
-├── utils/         # pure scoring / tier / confidence-analysis / recommendations logic
-├── components/
-│   ├── layout/    # ProgressRail, PageShell, Footer
-│   ├── steps/     # ProfileStep, SelfAssessmentStep, QuizStep, ResultsStep
-│   ├── results/   # ScoreHero, ConfidenceGapChart, ReadinessRadar, RecommendationsList, ConfidenceInsights
-│   └── ui/        # Button, Card, NumberField, SelectField, RadioGroup
-└── lib/           # Chart.js registration + theme
-```
+Computer Science Student
+Dayananda Sagar College of Engineering
